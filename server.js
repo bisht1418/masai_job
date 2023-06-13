@@ -9,7 +9,7 @@ const port = process.env.PORT || 8080;
 app.use(express.json());
 app.use(cors());
 
-app.use("/jobs", jobRouter);
+app.use("/job", jobRouter);
 app.get("/", (req, res) => {
   res.json({ message: "Welcome to masai job" });
 });
