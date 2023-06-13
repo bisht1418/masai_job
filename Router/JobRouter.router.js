@@ -17,7 +17,7 @@ jobRouter.get("/", async (req, res) => {
     const jobData = await jobModel.find({});
     res.json({ data: jobData });
   } catch (error) {
-    res.json({ error });
+    res.json({ error: error });
   }
 });
 
